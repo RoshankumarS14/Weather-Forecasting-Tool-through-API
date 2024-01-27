@@ -105,7 +105,7 @@ if(st.button("SUBMIT")):
             fig = go.Figure()
             fig.add_trace(go.Scatter(x=dates, y=mintemp, name='Minimum '))
             fig.add_trace(go.Scatter(x=dates, y=maxtemp, name='Maximimum ',marker_color='crimson'))
-            fig.update_layout(xaxis_title="Dates",yaxis_title="Temperature",font=dict(color="white"))
+            fig.update_layout(xaxis_title="Dates",yaxis_title="Temperature")
             st.plotly_chart(fig)
             
         icon=x["weather"][0]["icon"]
