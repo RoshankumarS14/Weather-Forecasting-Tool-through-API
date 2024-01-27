@@ -1,5 +1,6 @@
 import streamlit as st
 import datetime,requests
+from datetime import timedelta
 from plotly import graph_objects as go
 
 st.set_page_config(page_title='Weather Forecasting', page_icon="🌥️")
@@ -86,6 +87,7 @@ if(st.button("SUBMIT")):
             desc.append(item["weather"][0]["description"].title())
 
             d1=datetime.date.fromtimestamp(item["dt"])
+            d1 = d1 + timedelta(hours=5, minutes=30)
             dates.append(d1.strftime('%d %b'))
             
             sunrise.append( datetime.datetime.utcfromtimestamp(item["sunrise"]).strftime('%H:%M'))
