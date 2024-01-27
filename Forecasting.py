@@ -18,7 +18,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://i.postimg.cc/brCcdDXZ/Weather-Background.png")
+        background: url("https://i.postimg.cc/brCcdDXZ/Weather-Background.png"); background-size: cover;
     }
   
     </style>
