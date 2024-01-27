@@ -87,11 +87,9 @@ if(st.button("SUBMIT")):
             desc.append(item["weather"][0]["description"].title())
 
             d1=datetime.date.fromtimestamp(item["dt"])
-            d1 = d1 + timedelta(hours=5, minutes=30)
-            st.write(d1.strftime('%d %b'))
             dates.append(d1.strftime('%d %b'))
             
-            sunrise.append( datetime.datetime.utcfromtimestamp(item["sunrise"]).strftime('%H:%M'))
+            sunrise.append((datetime.datetime.utcfromtimestamp(item["sunrise"])+timedelta(hours=5, minutes=30)).strftime('%H:%M'))
             sunset.append( datetime.datetime.utcfromtimestamp(item["sunset"]).strftime('%H:%M'))
 
         def bargraph():
