@@ -98,7 +98,7 @@ if(st.button("SUBMIT")):
                 go.Bar(name="Maximum",x=dates,y=maxtemp,marker_color='crimson'),
                 go.Bar(name="Minimum",x=dates,y=mintemp,marker_color='navy')
                 ])
-            fig.update_layout(xaxis_title="Dates",yaxis_title="Temperature",barmode='group',margin=dict(l=70, r=10, t=80, b=80),font=dict(color="white"),legend=dict(font=dict(color="black")) )
+            fig.update_layout(xaxis_title="Dates",yaxis_title="Temperature",barmode='group',margin=dict(l=70, r=10, t=80, b=80) )
             st.plotly_chart(fig)
         
         def linegraph():
