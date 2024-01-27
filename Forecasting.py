@@ -2,7 +2,7 @@ import streamlit as st
 import datetime,requests
 from plotly import graph_objects as go
 
-st.set_page_config(page_title='Weather Forecasting', page_icon="🌦️")
+st.set_page_config(page_title='Weather Forecasting', page_icon="🌥️")
 
 st.title("8-DAY WEATHER FORECAST 🌧️🌥️")
 
