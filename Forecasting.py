@@ -88,7 +88,7 @@ if(st.button("SUBMIT")):
 
             d1=datetime.date.fromtimestamp(item["dt"])
             d1 = d1 + timedelta(hours=5, minutes=30)
-            print(d1)
+            st.write(d1)
             dates.append(d1.strftime('%d %b'))
             
             sunrise.append( datetime.datetime.utcfromtimestamp(item["sunrise"]).strftime('%H:%M'))
