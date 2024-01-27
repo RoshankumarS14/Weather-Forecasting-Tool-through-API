@@ -15,17 +15,17 @@ speed=st.selectbox("SELECT WIND SPEED UNIT ",["Metre/sec","Kilometre/hour"])
 
 graph=st.radio("SELECT GRAPH TYPE ",["Bar Graph","Line Graph"])
 
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://i.postimg.cc/brCcdDXZ/Weather-Background.png"); background-size: cover;
-    }
+# st.markdown(
+#     """
+#     <style>
+#     .reportview-container {
+#         background: url("https://i.postimg.cc/brCcdDXZ/Weather-Background.png"); background-size: cover;
+#     }
   
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 if unit=="Celsius":
     temp_unit=" °C"
